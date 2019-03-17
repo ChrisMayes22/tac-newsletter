@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Open+Sans:300,300i,400,600i,700,700i,800,800i');
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.7;
+    // color: $gray;
+}
+
+.primary-header {
+    color: $white;
+    text-transform: uppercase;
+    backface-visibility: hidden;
+    margin-bottom: 4rem;
+
+    &--main {
+        display: block;
+        font-size: 7rem;
+        font-weight: 300;
+        letter-spacing: 1.3rem;
+        animation: moveInLeft 0.7s ease-out;
+    }
+
+    &--sub {
+        display: block;
+        font-size: 2.86rem;
+        font-weight: 500;
+        letter-spacing: .59rem;
+        animation: moveInRight 0.7s ease-out;
+        margin-top: 1rem;
+    }
+}
+
+.secondary-header {
+    display: inline-block;
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+
+    &__text {
+        display: inline-block;
+        margin: 0 0 0 2rem;
+        text-transform: uppercase;
+        position: relative;
+        bottom: 0.5rem;
+    }
+
+    &__icon {
+        display: inline-block;
+        position: relative;
+        top: 0.2rem;
+        font-size: 4rem;
+    }
+}
+
+.main-heading {
+    display: inline-block;
+    margin: 1rem 1rem -6rem 1rem;
+    vertical-align: top;
+    text-transform: uppercase;
+    
+    &__icon {
+        display: inline-block;
+        margin: 0 3rem 0 0rem;
+        vertical-align: top;
+        font-size: 12rem;
+        background: linear-gradient(#e55039, #b71540);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+    }
+
+    &__text {
+        vertical-align: top;
+        display: inline-block;
+        font-size: 3.8rem;
+        letter-spacing: 1rem;
+        background: linear-gradient(#e55039, #b71540);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        position: relative;
+        top: 4.2rem;
+    }
+}
+
+.article-body {
+    width: 106rem;
+
+    &__paragraph {
+        font-size: 1.8rem;
+        width: 52rem;
+        margin: 1rem;
+    }
+}

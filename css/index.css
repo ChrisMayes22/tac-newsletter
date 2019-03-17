@@ -1,0 +1,313 @@
+@import url("https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Open+Sans:300,300i,400,600i,700,700i,800,800i");
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-3rem); }
+  80% {
+    transform: translateX(0.3rem); }
+  100% {
+    opacity: 100;
+    transform: translate(0); } }
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(3rem); }
+  80% {
+    transform: translateX(-0.3rem); }
+  100% {
+    opacity: 100;
+    transform: translate(0); } }
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem); }
+  100% {
+    opacity: 100;
+    transform: translate(0); } }
+
+/* line 1, scss/base/_base.scss */
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/* line 9, scss/base/_base.scss */
+html {
+  font-size: 62.5%; }
+
+/* line 13, scss/base/_base.scss */
+body {
+  padding: 2.08rem;
+  box-sizing: border-box; }
+
+/* line 18, scss/base/_base.scss */
+#home-header__right-button {
+  margin-left: 8rem; }
+
+/* line 22, scss/base/_base.scss */
+#home-header__left-button {
+  margin-right: 8rem; }
+
+/* line 3, scss/base/_typography.scss */
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.7; }
+
+/* line 9, scss/base/_typography.scss */
+.primary-header {
+  color: #FDFDFD;
+  text-transform: uppercase;
+  backface-visibility: hidden;
+  margin-bottom: 4rem; }
+  /* line 15, scss/base/_typography.scss */
+  .primary-header--main {
+    display: block;
+    font-size: 7rem;
+    font-weight: 300;
+    letter-spacing: 1.3rem;
+    animation: moveInLeft 0.7s ease-out; }
+  /* line 23, scss/base/_typography.scss */
+  .primary-header--sub {
+    display: block;
+    font-size: 2.86rem;
+    font-weight: 500;
+    letter-spacing: .59rem;
+    animation: moveInRight 0.7s ease-out;
+    margin-top: 1rem; }
+
+/* line 33, scss/base/_typography.scss */
+.secondary-header {
+  display: inline-block;
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem; }
+  /* line 39, scss/base/_typography.scss */
+  .secondary-header__text {
+    display: inline-block;
+    margin: 0 0 0 2rem;
+    text-transform: uppercase;
+    position: relative;
+    bottom: 0.5rem; }
+  /* line 47, scss/base/_typography.scss */
+  .secondary-header__icon {
+    display: inline-block;
+    position: relative;
+    top: 0.2rem;
+    font-size: 4rem; }
+
+/* line 55, scss/base/_typography.scss */
+.main-heading {
+  display: inline-block;
+  margin: 1rem 1rem -6rem 1rem;
+  vertical-align: top;
+  text-transform: uppercase; }
+  /* line 61, scss/base/_typography.scss */
+  .main-heading__icon {
+    display: inline-block;
+    margin: 0 3rem 0 0rem;
+    vertical-align: top;
+    font-size: 12rem;
+    background: linear-gradient(#e55039, #b71540);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent; }
+  /* line 72, scss/base/_typography.scss */
+  .main-heading__text {
+    vertical-align: top;
+    display: inline-block;
+    font-size: 3.8rem;
+    letter-spacing: 1rem;
+    background: linear-gradient(#e55039, #b71540);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    top: 4.2rem; }
+
+/* line 86, scss/base/_typography.scss */
+.article-body {
+  width: 106rem; }
+  /* line 89, scss/base/_typography.scss */
+  .article-body__paragraph {
+    font-size: 1.8rem;
+    width: 52rem;
+    margin: 1rem; }
+
+/* line 2, scss/base/_utilities.scss */
+.u-flex-align--end {
+  align-self: flex-end; }
+
+/* line 1, scss/layout/_header.scss */
+.home-header {
+  height: 40vh;
+  background-image: url(../assets/photographs/meet-the-team-no-text.jpg);
+  background-size: cover;
+  background-position: 0 -6rem;
+  clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%); }
+  /* line 8, scss/layout/_header.scss */
+  .home-header__upper-triangle {
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to right bottom, rgba(235, 47, 6, 0.7), rgba(235, 47, 6, 0.7));
+    clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+    z-index: 1; }
+  /* line 19, scss/layout/_header.scss */
+  .home-header__lower-triangle {
+    height: 100%;
+    z-index: 1;
+    background-image: linear-gradient(to right bottom, rgba(229, 26, 80, 0.7), rgba(229, 26, 80, 0.7));
+    clip-path: polygon(0 100%, 100% 100%, 100% 0%, 0 100%);
+    position: relative;
+    bottom: 100%; }
+  /* line 32, scss/layout/_header.scss */
+  .home-header__text-box {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2; }
+
+/* line 3, scss/layout/_grid.scss */
+.row {
+  max-width: 90vw;
+  margin: 0 auto; }
+  /* line 2, scss/abstracts/_mixins.scss */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table; }
+  /* line 9, scss/layout/_grid.scss */
+  .row:not(:last-child) {
+    margin-bottom: 4rem; }
+  /* line 13, scss/layout/_grid.scss */
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem)/2);
+    float: left; }
+    /* line 18, scss/layout/_grid.scss */
+    .row .col-1-of-2:not(:last-child) {
+      margin-right: 6rem; }
+  /* line 23, scss/layout/_grid.scss */
+  .row .col-1-of-3 {
+    width: calc((100% - 2*6rem)/3);
+    float: left; }
+    /* line 27, scss/layout/_grid.scss */
+    .row .col-1-of-3:not(:last-child) {
+      margin-right: 6rem; }
+  /* line 32, scss/layout/_grid.scss */
+  .row .col-1-of-4 {
+    width: calc((100% - 3*6rem)/4);
+    float: left; }
+    /* line 36, scss/layout/_grid.scss */
+    .row .col-1-of-4:not(:last-child) {
+      margin-right: 6rem; }
+  /* line 41, scss/layout/_grid.scss */
+  .row .col-2-of-3 {
+    width: calc(2 * ((100% - 2*6rem)/3) + 6rem);
+    float: left; }
+    /* line 45, scss/layout/_grid.scss */
+    .row .col-2-of-3:not(:last-child) {
+      margin-right: 6rem; }
+  /* line 50, scss/layout/_grid.scss */
+  .row .col-2-of-4 {
+    width: calc(2 * ((100% - 3*6rem)/4) + 6rem);
+    float: left; }
+    /* line 54, scss/layout/_grid.scss */
+    .row .col-2-of-4:not(:last-child) {
+      margin-right: 6rem; }
+  /* line 59, scss/layout/_grid.scss */
+  .row .col-3-of-4 {
+    width: calc( 3 * ((100% - 3*6rem)/4) + 2 * 6rem);
+    float: left; }
+    /* line 63, scss/layout/_grid.scss */
+    .row .col-3-of-4:not(:last-child) {
+      margin-right: 6rem; }
+
+/* line 3, scss/layout/_flex.scss */
+.flex-container--inline {
+  display: inline-flex; }
+
+/* line 7, scss/layout/_flex.scss */
+.flex-container--block {
+  display: flex; }
+
+/* line 11, scss/layout/_flex.scss */
+.flex-container--col {
+  vertical-align: top;
+  flex-direction: column; }
+
+/* line 16, scss/layout/_flex.scss */
+.flex-container--row {
+  flex-direction: row; }
+
+/* line 20, scss/layout/_flex.scss */
+.flex-container--justify-between {
+  justify-content: space-between; }
+
+/* line 1, scss/layout/_footer.scss */
+.bottom-border {
+  margin: 1rem 0 0 0;
+  height: 5rem;
+  width: 100%;
+  background-color: #e55039;
+  clip-path: polygon(0 60%, 100% 0%, 100% 98%, 0 100%); }
+
+/* line 1, scss/layout/_hr.scss */
+.horizontal-hr {
+  width: 40%;
+  margin: 0 auto;
+  border: none; }
+  /* line 6, scss/layout/_hr.scss */
+  .horizontal-hr--thin {
+    border-top: white solid 1px; }
+  /* line 10, scss/layout/_hr.scss */
+  .horizontal-hr--thick {
+    border-top: white solid 3px; }
+
+/* line 1, scss/components/_round-portrait.scss */
+[class*="round-portrait"] {
+  display: inline-block;
+  border: #e55039 solid 1.2rem;
+  border-radius: 100%;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+  margin: 4rem 2rem; }
+
+/* line 1, scss/components/_aside.scss */
+.aside {
+  display: inline-block;
+  list-style: none;
+  color: #FDFDFD; }
+  /* line 6, scss/components/_aside.scss */
+  .aside--short {
+    height: 36rem;
+    width: 39rem;
+    line-height: 3.4rem; }
+  /* line 12, scss/components/_aside.scss */
+  .aside--dark-yellow {
+    background: linear-gradient(to bottom right, #b71540, #891030); }
+  /* line 16, scss/components/_aside.scss */
+  .aside__ul {
+    padding: 1.5rem 2.5rem; }
+  /* line 20, scss/components/_aside.scss */
+  .aside li {
+    list-style: none;
+    padding: 0.7rem;
+    font-size: 1.6rem; }
+
+/* line 1, scss/pages/_page-one.scss */
+.page-one {
+  margin: -4rem 0 4rem 0; }
+  /* line 4, scss/pages/_page-one.scss */
+  .page-one__round-portrait {
+    height: 36rem;
+    width: 36rem;
+    background-image: url(../assets/photographs/david.png);
+    background-size: cover;
+    background-position: top;
+    position: relative;
+    top: 8rem; }

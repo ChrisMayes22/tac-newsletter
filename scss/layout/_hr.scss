@@ -1,0 +1,13 @@
+.horizontal-hr {
+    width: 40%;
+    margin: 0 auto;
+    border: none;
+
+    &--thin {
+        border-top: white solid 1px;
+    }
+
+    &--thick {
+        border-top: white solid 3px;
+    }   
+}

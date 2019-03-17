@@ -1,0 +1,25 @@
+.aside {
+    display: inline-block;
+    list-style: none;
+    color: $white;
+
+    &--short {
+        height: 36rem;
+        width: 39rem;
+        line-height: 3.4rem;
+    }
+
+    &--dark-yellow {
+        background: linear-gradient(to bottom right, $soaked-red, darken($soaked-red, 10%));
+    }
+
+    &__ul {
+        padding: 1.5rem 2.5rem;
+    }
+
+    & li {
+        list-style: none;
+        padding: 0.7rem;
+        font-size: 1.6rem;
+    }
+}

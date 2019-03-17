@@ -1,0 +1,28 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    padding: 2.08rem;
+    box-sizing: border-box;
+}
+
+#home-header__right-button {
+    margin-left: 8rem;
+}
+
+#home-header__left-button {
+    margin-right: 8rem;
+}
+
+
+
+

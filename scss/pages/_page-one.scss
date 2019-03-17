@@ -1,0 +1,14 @@
+.page-one{
+    margin: -4rem 0 4rem 0;
+
+    &__round-portrait {
+        height: 36rem;
+        width: 36rem;
+        background-image: url(../assets/photographs/david.png);
+        background-size: cover;
+        background-position: top;
+        position: relative;
+        top: 8rem;
+    }
+}
+//

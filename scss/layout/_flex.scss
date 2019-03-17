@@ -1,0 +1,23 @@
+.flex-container {
+
+    &--inline {
+        display: inline-flex;
+    }
+
+    &--block { 
+        display: flex;
+    }
+    
+    &--col {
+        vertical-align: top;
+        flex-direction: column;
+    }
+    
+    &--row {
+        flex-direction: row;
+    }
+
+    &--justify-between {
+        justify-content: space-between;
+    }
+}

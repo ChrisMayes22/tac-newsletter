@@ -1,0 +1,17 @@
+{
+  "name": "css-class",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "node-gyp": "^3.8.0",
+    "node-sass": "^4.11.0",
+    "nodemon": "^1.18.10"
+  },
+  "scripts": {
+    "compile:sass": "node-sass scss/main.scss css/index.css -watch /scss"
+  },
+  "author": "Chris Mayes",
+  "license": "ISC"
+}

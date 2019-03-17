@@ -1,0 +1,14 @@
+@mixin clearfix {
+    &::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+}
+
+// @mixin absolute-horizontal($units) {
+//     position: absolute;
+//     left: $units;
+// }
+
+//

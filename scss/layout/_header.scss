@@ -1,0 +1,41 @@
+.home-header {
+    height: 40vh;
+    background-image: url(../assets/photographs/meet-the-team-no-text.jpg);    
+    background-size: cover;
+    background-position: 0 -6rem;
+    clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+
+    &__upper-triangle{
+        height: 100%;
+        z-index: 1;
+        background-image: linear-gradient(
+            to right bottom, 
+            rgba($dark-red, 0.7),
+            rgba($dark-red, 0.7));
+        clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+        z-index: 1;
+    }
+
+    &__lower-triangle{
+        height: 100%;
+        z-index: 1;
+        background-image: linear-gradient(
+            to right bottom, 
+            rgba(lighten($soaked-red, 10%), 0.7),
+            rgba(lighten($soaked-red, 10%), 0.7));
+        clip-path: polygon(0 100%, 100% 100%, 100% 0%, 0 100%);
+        position: relative;
+        bottom: 100%;
+    }
+    
+
+    &__text-box{
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%); 
+        text-align: center;
+        z-index: 2
+    }
+}

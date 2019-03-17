@@ -1,0 +1,7 @@
+.bottom-border {
+    margin: 1rem 0 0 0;
+    height: 5rem;
+    width: 100%;
+    background-color: $red;
+    clip-path: polygon(0 60%, 100% 0%, 100% 98%, 0 100%);
+}
