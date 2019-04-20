@@ -1,0 +1,76 @@
+.grid-el {
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__label {
+        display: block;
+        height: 12rem;
+        color: $light-green;
+        font-size: 5rem;
+        position: relative;
+        top: 3rem;
+
+        &--left {
+            right: 15rem;
+        }
+//
+        &--right {
+            left: 15rem;
+        }
+
+        &__upper-triangle {
+            height: 100%;
+            z-index: 1;
+            clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+            &--green {
+                background-image: linear-gradient(
+                to right bottom, 
+                rgba($light-green, 0.7),
+                rgba($light-green, 0.7));
+            }   
+        }
+
+        &__lower-triangle {
+            height: 100%;
+            z-index: 1;
+            clip-path: polygon(0 100%, 100% 100%, 100% 0%, 0 100%);
+            &--green {
+                background-image: linear-gradient(
+                to right bottom, 
+                rgba($green, 0.7),
+                rgba($green, 0.7));
+            }
+            position: relative;
+            bottom: 100%;
+        }
+
+        &__textbox {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%); 
+            text-align: center;
+            z-index: 3;
+            letter-spacing: 1.5rem;
+            background: linear-gradient($dark-green, $soaked-green);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+    }
+
+    &--first {
+        background-image: url(../assets/photographs/david.png);
+    };
+
+    &--fourth {
+        background-image: url(../assets/photographs/christian.jpg);
+    }
+
+    &--fifth {
+        background-image: url(../assets/photographs/dan.jpg);
+    }
+}

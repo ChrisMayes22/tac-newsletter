@@ -1,41 +1,70 @@
-.home-header {
-    height: 40vh;
-    background-image: url(../assets/photographs/meet-the-team-no-text.jpg);    
+.page-header {
     background-size: cover;
-    background-position: 0 -6rem;
+    &__large {
+        background-image: url(../assets/photographs/meet-the-team-no-text.jpg);    
+        height: 40vh;
+        background-position: 0 -6rem;
+    };
+    &__small {
+        &--green {
+            background-image: linear-gradient($dark-green, $dark-green);
+        }
+        height: 16vh;
+    }
     clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
 
     &__upper-triangle{
         height: 100%;
         z-index: 1;
-        background-image: linear-gradient(
+        clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
+
+        &--red {
+            background-image: linear-gradient(
             to right bottom, 
             rgba($dark-red, 0.7),
             rgba($dark-red, 0.7));
-        clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
-        z-index: 1;
+        };
+        &--green {
+            background-image: linear-gradient(
+            to right bottom, 
+            rgba($dark-green, 0.7),
+            rgba($dark-green, 0.7));
+        };
     }
 
     &__lower-triangle{
         height: 100%;
         z-index: 1;
-        background-image: linear-gradient(
-            to right bottom, 
-            rgba(lighten($soaked-red, 10%), 0.7),
-            rgba(lighten($soaked-red, 10%), 0.7));
         clip-path: polygon(0 100%, 100% 100%, 100% 0%, 0 100%);
         position: relative;
         bottom: 100%;
+        &--red {
+            background-image: linear-gradient(
+            to right bottom, 
+            rgba($soaked-red, 0.7),
+            rgba($soaked-red, 0.7));
+        };
+        &--green {
+            background-image: linear-gradient(
+            to right bottom, 
+            rgba($soaked-green, 0.7),
+            rgba($soaked-green, 0.7));
+        };
     }
     
 
     &__text-box{
         position: absolute;
-        top: 20%;
         left: 50%;
         width: 100%;
         transform: translate(-50%, -50%); 
         text-align: center;
-        z-index: 2
+        z-index: 2;
+        &--first-page {
+            top: 20%;
+        };
+        &--second-page {
+            top: 11%;
+        };
     }
 }
