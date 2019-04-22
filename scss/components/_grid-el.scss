@@ -5,10 +5,11 @@
     background-size: cover;
 
     &__label {
+        font-family: 'Adamina', serif;
         display: block;
         height: 12rem;
         color: $light-green;
-        font-size: 5rem;
+        font-size: 4.1rem;
         position: relative;
         top: 3rem;
 
@@ -62,15 +63,51 @@
         }
     }
 
-    &--first {
+    &__text {
+        font-size: 2.3rem;
+        margin: 8rem 3rem;
+        color: darken($soaked-green, 10%);
+    }
+
+    &--david {
         background-image: url(../assets/photographs/david.png);
+        background-position: 0rem -8rem;
     };
 
-    &--fourth {
+    &--chance {
         background-image: url(../assets/photographs/christian.jpg);
-    }
+        background-position: 0rem -13rem;
+    };
 
-    &--fifth {
+    &--dan {
         background-image: url(../assets/photographs/dan.jpg);
     }
+
+    &--kayla {
+        background-image: url(../assets/photographs/kayla.png);
+    };
+
+    &--thomas {
+        background-image: url(../assets/photographs/thomas.png);
+    };
+
+    &--greg {
+        background-image: url(../assets/photographs/greg.jpg);
+    }
+
+    &--matt {
+        background-image: url(../assets/photographs/Matt.png);
+        background-position: 0 -29rem;
+    };
+
+    &--angela {
+        background-image: url(../assets/photographs/angela.png);
+    }
+
+    &--cokie {
+        background-image: url(../assets/photographs/cokie.jpg);
+        background-position: 0 -18rem;
+    }
 }
+
+//

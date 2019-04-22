@@ -1,0 +1,12 @@
+.background {
+    position: absolute;
+    z-index: -1;
+    height: 180rem;
+    width: 95.1vw;
+    top: 20.2rem;
+    left: 4rem;
+    border: solid lighten($light-green, 15%) 1px;
+    &--gray {
+        background-color: lighten($green, 30%);
+    }
+}
