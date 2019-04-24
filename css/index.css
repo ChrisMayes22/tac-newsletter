@@ -141,7 +141,7 @@ body {
   /* line 97, scss/base/_typography.scss */
   .article-body__paragraph {
     font-size: 1.8rem;
-    width: 52rem;
+    width: 70rem;
     margin: 1rem; }
 
 /* line 2, scss/base/_utilities.scss */
@@ -151,16 +151,16 @@ body {
 /* line 1, scss/layout/_header.scss */
 .page-header {
   background-size: cover;
-  clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%); }
-  /* line 3, scss/layout/_header.scss */
+  clip-path: polygon(0 25rem, 75rem 0rem, 100% 0, 100% 35%, 0 100%); }
+  /* line 4, scss/layout/_header.scss */
   .page-header__large {
     background-image: url(../assets/photographs/meet-the-team-no-text.jpg);
-    height: 40vh;
-    background-position: 0 -6rem; }
-  /* line 8, scss/layout/_header.scss */
+    height: 120vh;
+    background-position: -58rem -6rem; }
+  /* line 9, scss/layout/_header.scss */
   .page-header__small {
     height: 17vh; }
-    /* line 9, scss/layout/_header.scss */
+    /* line 10, scss/layout/_header.scss */
     .page-header__small--green {
       background-image: linear-gradient(#38ada9, #38ada9); }
   /* line 16, scss/layout/_header.scss */
@@ -174,20 +174,20 @@ body {
     /* line 27, scss/layout/_header.scss */
     .page-header__upper-triangle--green {
       background-image: linear-gradient(to right bottom, rgba(56, 173, 169, 0.7), rgba(56, 173, 169, 0.7)); }
-  /* line 35, scss/layout/_header.scss */
+  /* line 36, scss/layout/_header.scss */
   .page-header__lower-triangle {
     height: 100%;
     z-index: 1;
     clip-path: polygon(0 100%, 100% 100%, 100% 0%, 0 100%);
     position: relative;
     bottom: 100%; }
-    /* line 41, scss/layout/_header.scss */
+    /* line 42, scss/layout/_header.scss */
     .page-header__lower-triangle--red {
       background-image: linear-gradient(to right bottom, rgba(183, 21, 64, 0.7), rgba(183, 21, 64, 0.7)); }
-    /* line 47, scss/layout/_header.scss */
+    /* line 48, scss/layout/_header.scss */
     .page-header__lower-triangle--green {
       background-image: linear-gradient(to right bottom, rgba(7, 153, 146, 0.7), rgba(7, 153, 146, 0.7)); }
-  /* line 56, scss/layout/_header.scss */
+  /* line 57, scss/layout/_header.scss */
   .page-header__text-box {
     position: absolute;
     left: 50%;
@@ -195,10 +195,10 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 2; }
-    /* line 63, scss/layout/_header.scss */
+    /* line 64, scss/layout/_header.scss */
     .page-header__text-box--first-page {
       top: 20%; }
-    /* line 66, scss/layout/_header.scss */
+    /* line 67, scss/layout/_header.scss */
     .page-header__text-box--second-page {
       top: 11%; }
 
