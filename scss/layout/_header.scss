@@ -1,12 +1,13 @@
 .page-header {
     background-size: cover;
-    clip-path: polygon(0 25rem, 75rem 0rem, 100% 0, 100% 35%, 0 100%);
     &__large {
+        clip-path: polygon(0 25rem, 75rem 0rem, 100% 0, 100% 35%, 0 100%);
         background-image: url(../assets/photographs/meet-the-team-no-text.jpg);
         height: 120vh;
         background-position: -58rem -6rem;
     };
     &__small {
+        clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
         &--green {
             background-image: linear-gradient($dark-green, $dark-green);
         }
