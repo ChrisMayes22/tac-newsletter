@@ -98,18 +98,31 @@ body {
 /* line 104, scss/base/_typography.scss */
 .rect-title {
   text-align: center; }
-  /* line 107, scss/base/_typography.scss */
-  .rect-title__home-title {
-    width: 52vw;
-    background: linear-gradient(to right, #ce1848, #a01238);
+  /* line 109, scss/base/_typography.scss */
+  .rect-title__subheading--text {
     color: #FDFDFD;
-    position: relative;
-    top: -108rem;
-    left: 8rem;
-    font-size: 9rem;
-    letter-spacing: 4.3rem;
-    padding: 0 0 0 2rem;
-    border: solid 1px #5c0b20; }
+    font-size: 2em;
+    font-weight: bold;
+    display: inline-block;
+    margin: 0 0 0 1rem;
+    letter-spacing: 0.82rem; }
+  /* line 118, scss/base/_typography.scss */
+  .rect-title__subheading--img {
+    vertical-align: middle;
+    display: inline-block;
+    max-height: 3.5rem; }
+  /* line 125, scss/base/_typography.scss */
+  .rect-title__superheading {
+    font-size: 1.5rem;
+    margin: -1.5rem 0 0.25rem 0.25rem; }
+  /* line 130, scss/base/_typography.scss */
+  .rect-title__home-title {
+    min-width: 72vw;
+    background: linear-gradient(to right, #f93b12, #d22a05);
+    color: #FDFDFD;
+    font-size: 7vw;
+    letter-spacing: 2.0rem;
+    padding: 0 0 0 2rem; }
 
 /* line 2, scss/base/_utilities.scss */
 .u-flex-align--end {
@@ -117,45 +130,45 @@ body {
 
 /* line 1, scss/layout/_header.scss */
 .page-header {
-  background-size: cover; }
-  /* line 3, scss/layout/_header.scss */
-  .page-header__large {
-    clip-path: polygon(0 25rem, 75rem 0rem, 100% 0, 100% 35%, 0 100%);
-    background-image: url(../assets/photographs/meet-the-team-no-text.jpg);
-    height: 120vh;
-    background-position: -58rem -6rem; }
+  background-size: cover;
+  clip-path: polygon(0 22%, 50% 0, 100% 0, 100% 35%, 0 100%);
+  z-index: -3;
+  left: 0;
+  top: 0rem;
+  position: absolute;
+  right: 0; }
   /* line 9, scss/layout/_header.scss */
+  .page-header__large {
+    clip-path: polygon(0 17%, 50% 0, 100% 0, 100% 50%, 0 100%);
+    background-image: url(../assets/photographs/meet-the-team-no-text.jpg);
+    height: 78vh;
+    background-position: -54rem -1rem; }
+  /* line 15, scss/layout/_header.scss */
   .page-header__small {
     clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
     height: 17vh; }
-    /* line 11, scss/layout/_header.scss */
+    /* line 17, scss/layout/_header.scss */
     .page-header__small--green {
       background-image: linear-gradient(#38ada9, #38ada9); }
-  /* line 17, scss/layout/_header.scss */
+  /* line 23, scss/layout/_header.scss */
   .page-header__upper-triangle {
     height: 100%;
     z-index: 1;
     clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%); }
-    /* line 22, scss/layout/_header.scss */
-    .page-header__upper-triangle--red {
-      background-image: linear-gradient(to right bottom, rgba(235, 47, 6, 0.7), rgba(235, 47, 6, 0.7)); }
-    /* line 28, scss/layout/_header.scss */
+    /* line 34, scss/layout/_header.scss */
     .page-header__upper-triangle--green {
       background-image: linear-gradient(to right bottom, rgba(56, 173, 169, 0.7), rgba(56, 173, 169, 0.7)); }
-  /* line 37, scss/layout/_header.scss */
+  /* line 43, scss/layout/_header.scss */
   .page-header__lower-triangle {
     height: 100%;
     z-index: 1;
     clip-path: polygon(0 100%, 100% 100%, 100% 0%, 0 100%);
     position: relative;
     bottom: 100%; }
-    /* line 43, scss/layout/_header.scss */
-    .page-header__lower-triangle--red {
-      background-image: linear-gradient(to right bottom, rgba(183, 21, 64, 0.7), rgba(183, 21, 64, 0.7)); }
-    /* line 49, scss/layout/_header.scss */
+    /* line 55, scss/layout/_header.scss */
     .page-header__lower-triangle--green {
       background-image: linear-gradient(to right bottom, rgba(7, 153, 146, 0.7), rgba(7, 153, 146, 0.7)); }
-  /* line 58, scss/layout/_header.scss */
+  /* line 64, scss/layout/_header.scss */
   .page-header__text-box {
     position: absolute;
     left: 50%;
@@ -163,10 +176,10 @@ body {
     transform: translate(-50%, -50%);
     text-align: center;
     z-index: 2; }
-    /* line 65, scss/layout/_header.scss */
+    /* line 71, scss/layout/_header.scss */
     .page-header__text-box--first-page {
       top: 20%; }
-    /* line 68, scss/layout/_header.scss */
+    /* line 74, scss/layout/_header.scss */
     .page-header__text-box--second-page {
       top: 11%; }
 
@@ -207,11 +220,19 @@ body {
   margin: 1rem 0 0 0;
   height: 5rem;
   width: 100%;
+  margin: 1rem 0 0 0;
+  height: 5rem;
+  width: 100%;
+  clip-path: polygon(0 60%, 100% 0%, 100% 98%, 0 100%);
+  left: 0;
+  right: 0;
+  top: 93.4%;
+  position: absolute;
   clip-path: polygon(0 60%, 100% 0%, 100% 98%, 0 100%); }
-  /* line 5, scss/layout/_footer.scss */
+  /* line 14, scss/layout/_footer.scss */
   .bottom-border--red {
     background-color: #e55039; }
-  /* line 8, scss/layout/_footer.scss */
+  /* line 17, scss/layout/_footer.scss */
   .bottom-border--green {
     background-color: #38ada9; }
 

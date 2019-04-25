@@ -2,11 +2,19 @@
     margin: 1rem 0 0 0;
     height: 5rem;
     width: 100%;
+    margin: 1rem 0 0 0;
+    height: 5rem;
+    width: 100%;
+    clip-path: polygon(0 60%, 100% 0%, 100% 98%, 0 100%);
+    left: 0;
+    right: 0;
+    top: 93.4%;
+    position: absolute;
+    clip-path: polygon(0 60%, 100% 0%, 100% 98%, 0 100%);
     &--red {
         background-color: $red;
     };
     &--green {
         background-color: $dark-green;
     };
-    clip-path: polygon(0 60%, 100% 0%, 100% 98%, 0 100%);
 }//

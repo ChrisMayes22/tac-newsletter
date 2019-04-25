@@ -1,10 +1,16 @@
 .page-header {
     background-size: cover;
+    clip-path: polygon(0 22%, 50% 0, 100% 0, 100% 35%, 0 100%);
+    z-index: -3;
+    left: 0;
+    top: 0rem;
+    position: absolute;
+    right: 0;
     &__large {
-        clip-path: polygon(0 25rem, 75rem 0rem, 100% 0, 100% 35%, 0 100%);
+        clip-path: polygon(0 17%, 50% 0, 100% 0, 100% 50%, 0 100%);
         background-image: url(../assets/photographs/meet-the-team-no-text.jpg);
-        height: 120vh;
-        background-position: -58rem -6rem;
+        height: 78vh;
+        background-position: -54rem -1rem;
     };
     &__small {
         clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
@@ -19,12 +25,12 @@
         z-index: 1;
         clip-path: polygon(0 0, 100% 0, 100% 0%, 0 100%);
 
-        &--red {
-            background-image: linear-gradient(
-            to right bottom, 
-            rgba($dark-red, 0.7),
-            rgba($dark-red, 0.7));
-        };
+        // &--red {
+        //     background-image: linear-gradient(
+        //     to right bottom, 
+        //     rgba($dark-red, 0.7),
+        //     rgba($dark-red, 0.7));
+        // };
         &--green {
             background-image: linear-gradient(
             to right bottom, 
@@ -40,12 +46,12 @@
         clip-path: polygon(0 100%, 100% 100%, 100% 0%, 0 100%);
         position: relative;
         bottom: 100%;
-        &--red {
-            background-image: linear-gradient(
-            to right bottom, 
-            rgba($soaked-red, 0.7),
-            rgba($soaked-red, 0.7));
-        };
+        // &--red {
+        //     background-image: linear-gradient(
+        //     to right bottom, 
+        //     rgba($soaked-red, 0.7),
+        //     rgba($soaked-red, 0.7));
+        // };
         &--green {
             background-image: linear-gradient(
             to right bottom, 
@@ -70,3 +76,4 @@
         };
     }
 }
+//
